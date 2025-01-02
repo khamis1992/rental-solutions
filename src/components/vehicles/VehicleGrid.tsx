@@ -109,7 +109,7 @@ export const VehicleGrid = ({ vehicles, onVehicleClick }: VehicleGridProps) => {
                   onChange={(e) => setLocationValue(e.target.value)}
                   onKeyDown={(e) => handleLocationKeyPress(e, vehicle.id)}
                   onBlur={() => handleLocationUpdate(vehicle.id)}
-                  autoFocus
+                  
                   className="w-full text-xs"
                   onClick={(e) => e.stopPropagation()}
                 />

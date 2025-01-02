@@ -28,7 +28,7 @@ export const VehicleInsuranceCell = ({
           onChange={(e) => onInsuranceChange(e.target.value)}
           onKeyDown={onKeyPress}
           onBlur={onBlur}
-          autoFocus
+          
           className="w-full"
           placeholder="Enter insurance company"
         />
