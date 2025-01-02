@@ -77,7 +77,7 @@ export const SearchBox = () => {
       {selectedVehicle && (
         <VehicleDetailsDialog
           vehicleId={selectedVehicle}
-          open={!!selectedVehicle}
+          open={Boolean(selectedVehicle)}
           onOpenChange={(open) => !open && setSelectedVehicle(null)}
         />
       )}
@@ -85,7 +85,7 @@ export const SearchBox = () => {
       {selectedCustomer && (
         <CustomerDetailsDialog
           customerId={selectedCustomer}
-          open={!!selectedCustomer}
+          open={Boolean(selectedCustomer)}
           onOpenChange={(open) => !open && setSelectedCustomer(null)}
         />
       )}
@@ -93,7 +93,7 @@ export const SearchBox = () => {
       {selectedAgreement && (
         <AgreementDetailsDialog
           agreementId={selectedAgreement}
-          open={!!selectedAgreement}
+          open={Boolean(selectedAgreement)}
           onOpenChange={(open) => !open && setSelectedAgreement(null)}
         />
       )}

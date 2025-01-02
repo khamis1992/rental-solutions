@@ -45,7 +45,7 @@ export function PaymentTrackingDialog({
         throw err;
       }
     },
-    enabled: open && !!agreementId,
+    enabled: open && Boolean(agreementId),
     retry: 2,
   });
 
@@ -61,7 +61,7 @@ export function PaymentTrackingDialog({
       if (error) throw error;
       return data;
     },
-    enabled: open && !!agreementId,
+    enabled: open && Boolean(agreementId),
   });
 
   useEffect(() => {

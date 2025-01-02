@@ -98,7 +98,7 @@ export function ContractAnalysis({ documentId }: ContractAnalysisProps) {
       }
     },
     retry: false,
-    enabled: !!documentId
+    enabled: Boolean(documentId)
   });
 
   if (error) {

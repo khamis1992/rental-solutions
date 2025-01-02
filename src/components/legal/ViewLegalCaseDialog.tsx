@@ -65,7 +65,7 @@ export const ViewLegalCaseDialog = ({
 
       return data;
     },
-    enabled: !!caseId && open,
+    enabled: Boolean(caseId) && open,
   });
 
   const handleStatusChange = () => {

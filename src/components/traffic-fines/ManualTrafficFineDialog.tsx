@@ -47,7 +47,7 @@ export const ManualTrafficFineDialog = ({ onFineAdded }: ManualTrafficFineDialog
       if (error) throw error;
       return data;
     },
-    enabled: !!agreementNumber,
+    enabled: Boolean(agreementNumber),
   });
 
   const handleSubmit = async (e: React.FormEvent) => {

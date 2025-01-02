@@ -111,13 +111,13 @@ export const AssociatedAgreements = ({ vehicleId }: AssociatedAgreementsProps) =
 
         <CustomerDetailsDialog
           customerId={selectedCustomerId || ""}
-          open={!!selectedCustomerId}
+          open={Boolean(selectedCustomerId)}
           onOpenChange={(open) => !open && setSelectedCustomerId(null)}
         />
 
         <AgreementDetailsDialog
           agreementId={selectedAgreementId || ""}
-          open={!!selectedAgreementId}
+          open={Boolean(selectedAgreementId)}
           onOpenChange={(open) => !open && setSelectedAgreementId(null)}
         />
       </CardContent>

@@ -22,7 +22,7 @@ export const useOverduePayments = (agreementId?: string) => {
 
       return data;
     },
-    enabled: !!agreementId,
+    enabled: Boolean(agreementId),
   });
 
   const processOverduePayments = async () => {

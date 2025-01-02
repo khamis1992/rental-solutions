@@ -39,7 +39,7 @@ export const CustomerInformation = ({
       if (error) throw error;
       return data;
     },
-    enabled: !!selectedCustomerId
+    enabled: Boolean(selectedCustomerId)
   });
 
   // Auto-fill form fields when customer details are loaded

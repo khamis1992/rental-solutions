@@ -49,7 +49,7 @@ export const RentDueManagement = ({ customerId }: RentDueManagementProps) => {
       if (error) throw error;
       return data;
     },
-    enabled: !!activeAgreement?.id,
+    enabled: Boolean(activeAgreement?.id),
   });
 
   if (isLoading) {

@@ -37,7 +37,7 @@ export const VehicleDetailsDialog = ({
       if (error) throw error;
       return data;
     },
-    enabled: !!vehicleId && open,
+    enabled: Boolean(vehicleId) && open,
   });
 
   if (!open) return null;

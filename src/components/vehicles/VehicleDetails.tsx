@@ -42,7 +42,7 @@ export const VehicleDetails = () => {
       console.log("Vehicle data:", data); // Debug log
       return data;
     },
-    enabled: !!id, // Only run query if id exists
+    enabled: Boolean(id), // Only run query if id exists
     retry: 3, // Retry failed requests 3 times
   });
 
