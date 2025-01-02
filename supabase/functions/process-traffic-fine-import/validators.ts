@@ -29,7 +29,7 @@ export const normalizeRow = (
   expectedColumns: number
 ): string[] => {
   if (rowData.length < expectedColumns) {
-    console.log(`Normalizing row with missing columns:`, {
+    console.log("Normalizing row with missing columns:", {
       original: rowData.length,
       adding: expectedColumns - rowData.length
     });
