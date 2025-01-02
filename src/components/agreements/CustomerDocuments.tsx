@@ -38,7 +38,7 @@ export const CustomerDocuments = ({ customerId }: CustomerDocumentsProps) => {
         license_document_url: licenseDocumentUrl
       };
     },
-    enabled: !!customerId,
+    enabled: Boolean(customerId),
   });
 
   if (!customerId) return null;

@@ -80,25 +80,25 @@ export const AgreementList = () => {
       
       <InvoiceDialog
         agreementId={selectedAgreementId || ""}
-        open={!!selectedAgreementId}
+        open={Boolean(selectedAgreementId)}
         onOpenChange={(open) => !open && setSelectedAgreementId(null)}
       />
 
       <PaymentTrackingDialog
         agreementId={selectedPaymentTrackingId || ""}
-        open={!!selectedPaymentTrackingId}
+        open={Boolean(selectedPaymentTrackingId)}
         onOpenChange={(open) => !open && setSelectedPaymentTrackingId(null)}
       />
 
       <PaymentHistoryDialog
         agreementId={selectedPaymentHistoryId || ""}
-        open={!!selectedPaymentHistoryId}
+        open={Boolean(selectedPaymentHistoryId)}
         onOpenChange={(open) => !open && setSelectedPaymentHistoryId(null)}
       />
 
       <AgreementDetailsDialog
         agreementId={selectedDetailsId || ""}
-        open={!!selectedDetailsId}
+        open={Boolean(selectedDetailsId)}
         onOpenChange={(open) => !open && setSelectedDetailsId(null)}
       />
 

@@ -13,7 +13,7 @@ serve(async (req) => {
 
   try {
     const { messages, dbResponse } = await req.json();
-    console.log('Processing chat request:', { messageCount: messages.length, hasDbResponse: !!dbResponse });
+    console.log('Processing chat request:', { messageCount: messages.length, hasDbResponse: Boolean(dbResponse) });
 
     // If we have a database response, use it directly
     if (dbResponse) {

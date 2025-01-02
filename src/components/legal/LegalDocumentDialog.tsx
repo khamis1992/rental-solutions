@@ -65,7 +65,7 @@ export function LegalDocumentDialog({
       if (error) throw error;
       return data;
     },
-    enabled: open && !!customerId,
+    enabled: open && Boolean(customerId),
   });
 
   const { data: versions } = useQuery({
@@ -82,7 +82,7 @@ export function LegalDocumentDialog({
       if (error) throw error;
       return data;
     },
-    enabled: open && !!customerId,
+    enabled: open && Boolean(customerId),
   });
 
   const handleSignatureCapture = async (signature: string) => {

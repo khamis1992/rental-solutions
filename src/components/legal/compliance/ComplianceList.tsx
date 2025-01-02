@@ -104,7 +104,7 @@ export const ComplianceList = ({ items, isLoading }: ComplianceListProps) => {
                   variant="outline"
                   size="sm"
                   onClick={() => handleStatusUpdate(item.id, 'completed')}
-                  disabled={!!updatingId}
+                  disabled={Boolean(updatingId)}
                 >
                   {updatingId === item.id ? (
                     <Loader2 className="h-4 w-4 animate-spin" />
@@ -117,7 +117,7 @@ export const ComplianceList = ({ items, isLoading }: ComplianceListProps) => {
                   variant="outline"
                   size="sm"
                   onClick={() => handleStatusUpdate(item.id, 'pending')}
-                  disabled={!!updatingId}
+                  disabled={Boolean(updatingId)}
                 >
                   {updatingId === item.id ? (
                     <Loader2 className="h-4 w-4 animate-spin" />

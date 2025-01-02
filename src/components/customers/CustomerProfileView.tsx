@@ -38,7 +38,7 @@ export const CustomerProfileView = ({ customerId }: CustomerProfileViewProps) =>
 
       return data;
     },
-    enabled: !!customerId,
+    enabled: Boolean(customerId),
   });
 
   if (isLoadingProfile) {

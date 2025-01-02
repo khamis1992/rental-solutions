@@ -89,7 +89,7 @@ export const InvoiceList = ({ agreementId }: InvoiceListProps) => {
 
       <InvoiceDialog
         agreementId={selectedInvoiceId || ""}
-        open={!!selectedInvoiceId}
+        open={Boolean(selectedInvoiceId)}
         onOpenChange={(open) => !open && setSelectedInvoiceId(null)}
       />
     </div>

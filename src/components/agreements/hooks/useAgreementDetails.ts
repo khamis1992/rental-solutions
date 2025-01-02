@@ -69,7 +69,7 @@ export const useAgreementDetails = (agreementId: string, open: boolean) => {
         remainingAmount: remainingAmount || defaultRemainingAmount
       };
     },
-    enabled: !!agreementId && open,
+    enabled: Boolean(agreementId) && open,
   });
 
   // Set up real-time subscription for both leases and remaining_amounts tables
