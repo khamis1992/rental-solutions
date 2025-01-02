@@ -72,7 +72,7 @@ export const VehicleLocationCell = ({
           onKeyDown={handleKeyPress}
           onBlur={handleBlur}
           disabled={updating}
-          autoFocus
+          
           className="w-full"
           placeholder="Enter location"
         />
