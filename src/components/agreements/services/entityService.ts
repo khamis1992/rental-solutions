@@ -23,7 +23,7 @@ export const getOrCreateCustomer = async () => {
         .from('profiles')
         .insert({
           id: newCustomerId,
-          full_name: `Default Customer`,
+          full_name: "Default Customer",
           role: 'customer'
         })
         .select()
