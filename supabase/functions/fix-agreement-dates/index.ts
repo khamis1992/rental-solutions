@@ -77,7 +77,7 @@ serve(async (req) => {
         const updates: any = {};
         
         // Process start_date
-        if (agreement.start_date && agreement.start_date.includes('1970')) {
+        if (agreement.start_date?.includes('1970')) {
           const correctedStartDate = parseDate(agreement.checkout_date);
           if (correctedStartDate) {
             updates.start_date = correctedStartDate;
@@ -85,7 +85,7 @@ serve(async (req) => {
         }
 
         // Process end_date
-        if (agreement.end_date && agreement.end_date.includes('1970')) {
+        if (agreement.end_date?.includes('1970')) {
           const correctedEndDate = parseDate(agreement.checkin_date);
           if (correctedEndDate) {
             updates.end_date = correctedEndDate;
