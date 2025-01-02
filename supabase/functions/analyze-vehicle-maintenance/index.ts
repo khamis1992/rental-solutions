@@ -91,7 +91,7 @@ serve(async (req) => {
       const predictions = []
 
       // Add AI-enhanced predictions
-      if (analysis.choices && analysis.choices[0]) {
+      if (analysis.choices?.[0]) {
         const aiAnalysis = analysis.choices[0].message.content
         
         // Parse AI recommendations and combine with sensor data
